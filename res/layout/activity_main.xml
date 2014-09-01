@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#5F9EA0" >
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeSurfView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/RelativeBtn" >
+
+        <SurfaceView
+            android:id="@+id/surface_camera"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+             >
+        </SurfaceView>
+        
+        <ImageView 
+            android:id="@+id/Img_rec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/description"
+            android:src="@drawable/rec"/>
+    </RelativeLayout>
+
+</RelativeLayout>
